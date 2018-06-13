@@ -1,3 +1,7 @@
+// Table - People
+
+
+
 1. CREATE TABLE Person(ID INTEGER PRIMARY KEY AUTOINCREMENT, Name string, Age integer, Height integer, City string, FavoriteColor string);
 
 2. INSERT INTO Person(Name, Age, Height, City, FavoriteColor) VALUES ('Blake', 23, 185, 'Omaha', 'Red');
@@ -29,3 +33,25 @@ INSERT INTO Person(Name, Age, Height, City, FavoriteColor) VALUES ('Caela', 22, 
 13. SELECT * FROM person WHERE favoritecolor IN('Orange', 'Green', 'Blue');
 
 14. SELECT * FROM person WHERE favoritecolor IN('Yellow', 'Purple');
+
+
+
+// Table - Orders
+
+
+
+ 1. CREATE TABLE Orders(PersonID integer, ProductName string, ProductPrice integer, Quantity integer);
+
+ 2. INSERT INTO orders(personid, productname, productprice, quantity) VALUES (0, "iphone", 800, 1);
+ INSERT INTO orders(personid, productname, productprice, quantity) VALUES (1, "tomatoes", 10, 10);
+ INSERT INTO orders(personid, productname, productprice, quantity) VALUES (2, "mousepad", 1, 10);
+ INSERT INTO orders(personid, productname, productprice, quantity) VALUES (3, "laptop battery", 1, 25);
+ INSERT INTO orders(personid, productname, productprice, quantity) VALUES (4, "hdmi cable", 10, 50);
+
+ 3. SELECT * fROM orders;
+
+ 4. SELECT sum(quantity) FROM orders;
+
+ 5. SELECT sum(productprice) FROM orders;
+
+ 6. SELECT sum(productprice * quantity) FROM orders WHERE personid = 1;
