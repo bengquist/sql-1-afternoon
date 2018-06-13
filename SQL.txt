@@ -1,0 +1,31 @@
+1. CREATE TABLE Person(ID INTEGER PRIMARY KEY AUTOINCREMENT, Name string, Age integer, Height integer, City string, FavoriteColor string);
+
+2. INSERT INTO Person(Name, Age, Height, City, FavoriteColor) VALUES ('Blake', 23, 185, 'Omaha', 'Red');
+INSERT INTO Person(Name, Age, Height, City, FavoriteColor) VALUES ('Kayleigh', 23, 160, 'Omaha', 'Gold');
+INSERT INTO Person(Name, Age, Height, City, FavoriteColor) VALUES ('Rachel', 25, 155, 'Houston', 'TX');
+INSERT INTO Person(Name, Age, Height, City, FavoriteColor) VALUES ('Duncan', 23, 180, 'Omaha', 'Green');
+INSERT INTO Person(Name, Age, Height, City, FavoriteColor) VALUES ('Caela', 22, 140, 'LA', 'Purple');
+
+3. SELECT * FROM person ORDER BY height DESC
+
+4. SELECT * FROM person ORDER BY height ASC
+
+5. SELECT * FROM person ORDER BY age DESC;
+
+6. SELECT * FROM person WHERE age > 20;
+
+7. SELECT * FROM person where age = 18;
+
+8. SELECT * FROM person where age < 20 OR age > 30;
+
+9. SELECT * FROM person where age != 27;
+
+10. SELECT * FROM person WHERE favoritecolor != 'Red';
+
+11. SELECT * FROM person WHERE favoritecolor != 'Red' AND favoritecolor != 'Blue';
+
+12. SELECT * FROM person WHERE favoritecolor = 'Orange' OR favoritecolor = 'Green';
+
+13. SELECT * FROM person WHERE favoritecolor IN('Orange', 'Green', 'Blue');
+
+14. SELECT * FROM person WHERE favoritecolor IN('Yellow', 'Purple');
